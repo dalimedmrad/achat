@@ -79,5 +79,11 @@
 			<name>Nexus Repository</name>
 			<url>http://192.168.50.4:8081/repository/maven-releases/</url>
 		</repository>
+		<snapshotRepository>
+			<id>deploymentRepo</id>
+			<name>Nexus Repository</name>
+			<url>http://192.168.50.4:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+		<artifactId>achat_rest_docker</artifactId>
 	</distributionManagement>
 </project>
