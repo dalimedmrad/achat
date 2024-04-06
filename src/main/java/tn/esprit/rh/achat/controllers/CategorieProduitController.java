@@ -15,6 +15,13 @@ public class CategorieProduitController {
 
 	@Autowired
 	ICategorieProduitService categorieProduitService;
+
+
+	@GetMapping("/hello")
+	@ResponseBody
+	public void Hello() {
+		System.out.println("hello word");
+	}
 	
 	// http://localhost:8089/SpringMVC/categorieProduit/retrieve-all-categorieProduit
 	@GetMapping("/retrieve-all-categorieProduit")
