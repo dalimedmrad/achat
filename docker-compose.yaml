@@ -1,5 +1,5 @@
 version: "3.9"
-name: devops-workshop
+#name: devops-workshop
 services:
   mysqldb:
     image: "mysql:8.0"
