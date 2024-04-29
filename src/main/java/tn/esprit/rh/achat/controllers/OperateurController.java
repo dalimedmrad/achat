@@ -18,6 +18,12 @@ public class OperateurController {
 	IOperateurService operateurService;
 	
 	// http://localhost:8089/SpringMVC/operateur/retrieve-all-operateurs
+
+	@GetMapping("/hello")
+	@ResponseBody
+	public void hello() {
+		System.out.println("hello dali !");
+	}
 	@GetMapping("/retrieve-all-operateurs")
 	@ResponseBody
 	public List<Operateur> getOperateurs() {
