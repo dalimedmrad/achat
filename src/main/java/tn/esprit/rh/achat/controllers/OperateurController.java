@@ -21,7 +21,7 @@ public class OperateurController {
 
 	@GetMapping("/hello")
 	public void hello() {
-		System.out.println("hello dali !");
+		System.out.println("hello dali !!!");
 	}
 	@GetMapping("/retrieve-all-operateurs")
 	@ResponseBody

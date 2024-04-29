@@ -1,13 +1,14 @@
-FROM openjdk:8-jdk-alpine
+# Use OpenJDK 11 as the base image
+FROM openjdk:11
+
+# Expose port 8090
 EXPOSE 8090
-ADD target/achat-1.0.jar achat-1.0.jar
-ENTRYPOINT ["java","-jar","/achat-1.0.jar"]
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the JAR file into the container
+COPY target/achat-1.0.jar /app/achat-1.0.jar
 
 
-
-#FROM maven:3.8.3-openjdk-17 AS build
-#COPY src /home/app/src
-#COPY pom.xml /home/app
-#RUN mvn -f /home/app/pom.xml clean package
-#EXPOSE 8080
-#ENTRYPOINT ["java","-jar","/home/app/target/achat_rest_docker.jar"]
+CMD ["java", "-jar", "achat-1.0.jar"]
