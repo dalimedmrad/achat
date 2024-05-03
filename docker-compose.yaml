@@ -10,8 +10,8 @@ services:
       - springapimysql-net
     environment:
       MYSQL_DATABASE: achatdb
-      MYSQL_USER: dali
-      MYSQL_PASSWORD: dali_pw
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - db:/data/db
