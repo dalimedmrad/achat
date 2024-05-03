@@ -1,5 +1,5 @@
 # Use OpenJDK 11 as the base image
-FROM openjdk:11
+FROM eclipse-temurin:17-jdk-alpine
 
 # Expose port 8090
 EXPOSE 8090
