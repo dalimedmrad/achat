@@ -75,7 +75,7 @@
 				<artifactId>maven-deploy-plugin</artifactId>
 				<configuration>
 					<repositoryId>deploymentRepo</repositoryId>
-					<url>http://192.168.50.4:8081/repository/maven-releases/</url>
+					<url>http:/192.168.56.50:8081/repository/maven-releases/</url>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -84,12 +84,12 @@
 		<repository>
 			<id>deploymentRepo</id>
 			<name>Nexus Repository</name>
-			<url>http://192.168.50.4:8081/repository/maven-releases/</url>
+			<url>http://192.168.56.50:8081/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>deploymentRepo</id>
 			<name>Nexus Repository</name>
-			<url>http://192.168.50.4:8081/repository/maven-snapshots/</url>
+			<url>http://192.168.56.50:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
