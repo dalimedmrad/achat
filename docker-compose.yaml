@@ -1,20 +1,20 @@
 version: "3.9"
 #name: devops-workshop
 services:
-  mysqldb:
-    image: "mysql:8.0"
-    restart: always
-    ports:
-      - 3306:3306
-    networks:
-      - springapimysql-net
-    environment:
-      MYSQL_DATABASE: achatdb
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
-      MYSQL_ROOT_PASSWORD: root
-    volumes:
-      - db:/data/db
+  # mysqldb:
+  #   image: "mysql:8.0"
+  #   restart: always
+  #   ports:
+  #     - 3306:3306
+  #   networks:
+  #     - springapimysql-net
+  #   environment:
+  #     MYSQL_DATABASE: achatdb
+  #     MYSQL_USER: root
+  #     MYSQL_PASSWORD: root
+  #     MYSQL_ROOT_PASSWORD: root
+  #   volumes:
+  #     - db:/data/db
 
   api_service:
     build: .
