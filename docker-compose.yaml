@@ -3,9 +3,10 @@ version: "3.9"
 services:
   mysqldb:
     image: "mysql:8.0"
+    container_name: database_mysql
     restart: always
     ports:
-      - 3306:3306
+      - "3306:3306"
     networks:
       - springapimysql-net
     environment:
@@ -18,9 +19,10 @@ services:
 
   api_service:
     build: .
-    restart: always
+    container_name: backend_spring
+    #restart: always
     ports:
-      - 8090:8090
+      - "8090:8090"
     networks:
       - springapimysql-net
     environment:
